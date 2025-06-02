@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Startup</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <h3>Fake Startup</h3>
+        <ul id="navList">
+          <li class="current"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+        </ul>
+        <button onClick="handleClick()" class="menuBtn">
+          <i class="material-symbols-outlined"> menu </i>
+        </button>
+      </nav>
+      <div class="hero">
+        <img class="hero-img" src="backgroundSVG.svg" alt="" />
+        <div class="landing-text">
+          <h1>Welcome To Fake Startup</h1>
+          <h3>We Blockchainify All Things Machine Learning</h3>
+        </div>
+      </div>
+      <section>
+        <div class="cards">
+          <h2>Synergy</h2>
+          <button>See More</button>
+        </div>
+        <div class="cards">
+          <h2>Incubator</h2>
+          <button>See More</button>
+        </div>
+        <div class="cards">
+          <h2>Angel Investments</h2>
+          <button>See More</button>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <h3>Contact</h3>
+    </footer>
+  </body>
+  <script>
+    function handleClick() {
+      const navList = document.getElementById("navList");
+      navList.classList.toggle("show");
+    }
+  </script>
+</html>
